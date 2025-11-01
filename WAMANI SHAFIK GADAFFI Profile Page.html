@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #4169e1 0%, #1e3a8a 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .page-title {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #1e3a8a, #4169e1);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .social-link:hover {
+            background: white;
+            color: #1e3a8a;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .content {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .info-item {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .info-item i {
+            margin-right: 10px;
+            color: #1e3a8a;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .hobby-tag {
+            background: #e6f0ff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            color: #1e3a8a;
+        }
+        
+        .hobby-tag:hover {
+            background: #1e3a8a;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8faff;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .page-title {
+                font-size: 1.8rem;
+            }
+            
+            .social-links {
+                gap: 10px;
+            }
+            
+            .social-link {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="page-title">My Profile Page</div>
+        
+        <div class="header">
+            <div class="profile-pic">
+                <img src="https://pbs.twimg.com/profile_images/1756697403862745088/LmqTGj9X_400x400.jpg" alt="Profile Picture">
+            </div>
+            <h1>Wamani Shafik Gadaffi</h1>
+            <p class="tagline">Research Assistant</p>
+            
+            <div class="social-links">
+                <a href="https://www.x.com/abooki_omubiito" class="social-link" target="blue" title="Follow me">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="left-column">
+                <div class="section">
+                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="info-item">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <strong>Program:</strong> Bachelor of Information Systems & Technology
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-book"></i>
+                        <div>
+                            <strong>Course unit:</strong> Internet Technology & Website Design
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <strong>Univeristy:</strong> UTAMU
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2><i class="fas fa-map-marker-alt"></i> Location</h2>
+                    <div class="info-item">
+                        <i class="fas fa-globe-americas"></i>
+                        <div>Kiwatule, Ntinda</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2><i class="fas fa-address-book"></i> Contact Info</h2>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>wamani.shafik@student.utamu.ac.ug</div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>+256 769 862409</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="section">
+                    <h2><i class="fas fa-user"></i> About me</h2>
+                    <p>I am a Research Assistant at the Uganda Bureau of Statistics (UBOS) who is proficient in data collection softwares like CSPro, ODK Collect, SurveyCTO for accurate & efficient survey administrationwho also doubles as a dedicated student of Information Systems & Technology at UTAMU. I'm very passionate about how emerging technologies can solve real-world problems.</p>
+                </div>
+                
+                <div class="section">
+                    <h2><i class="fas fa-running"></i> Hobbies & Interests</h2>
+                    <div class="hobbies">
+                        <span class="hobby-tag">Football</span>
+                        <span class="hobby-tag">Photography</span>
+                        <span class="hobby-tag">Traveling</span>
+                        <span class="hobby-tag">Cooking</span>                  
+                        <span class="hobby-tag">Solving Puzzles</span>
+                        <span class="hobby-tag">Making Friends</span>
+                        <span class="hobby-tag">Listening to Music</span>
+                        <span class="hobby-tag">Darts</span>
+                        <span class="hobby-tag">Technology</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+         &copy; Wamani Shafik Gadaffi 2025
+        </div>
+    </div>
+</body>
+</html>
